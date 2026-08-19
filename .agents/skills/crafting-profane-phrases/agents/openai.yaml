@@ -1,0 +1,4 @@
+interface:
+  display_name: "Crafting Profane Phrases"
+  short_description: "Build varied compact Russian profanity"
+  default_prompt: "Use $crafting-profane-phrases to rewrite this Russian response with compact contextual profanity."
