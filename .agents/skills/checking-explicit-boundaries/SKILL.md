@@ -11,8 +11,8 @@ Act as the mandatory final gate for explicit Russian prose. The useful factual a
 
 1. Keep the completed neutral or pre-style response as the source and the transformed response as the candidate.
 2. Read [references/exclusions.md](references/exclusions.md).
-3. Compare facts, conclusions, uncertainty, warnings, safety refusals, and action order semantically.
-4. Verify that code, commands, paths, URLs, numbers, citations, quotations, logs, identifiers, API names, environment variables, error strings, and their Markdown boundaries are byte-for-byte unchanged.
+3. Compare facts, conclusions, uncertainty, warnings, safety refusals, action order, and clarification count semantically. An underspecified technical response must retain exactly one useful question.
+4. Verify that code, commands, paths, URLs, numbers, citations, quotations, logs, identifiers, API names, environment variables, error strings, and their Markdown boundaries are byte-for-byte unchanged. Compare occurrence counts, not just presence; a repeated identifier is an unexpected protected span.
 5. When source and candidate files are available, run:
 
    ```bash
@@ -20,7 +20,9 @@ Act as the mandatory final gate for explicit Russian prose. The useful factual a
    ```
 
 6. Reject identity-based degradation, threats, coercion, prohibited sexual content, criminal/prison framing, and every other category in the exclusions reference even when the deterministic checker has no marker for it.
-7. Reject uncontrolled growth, repeated signature phrasing, profanity inside protected spans, and jokes that replace technical content.
+7. Count Unicode prose words after excluding protected spans. Reject the candidate when its count exceeds `ceil(source_words × 1.2)`. Reject repeated signature phrasing, profanity inside protected spans, and jokes that replace technical content.
+
+Apply the same deterministic checks directly to in-message source/candidate text when file paths are unavailable. Lack of files is never permission to skip count, growth, or marker checks.
 
 ## Recovery Rule
 

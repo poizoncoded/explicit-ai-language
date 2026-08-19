@@ -36,7 +36,7 @@ All command responses are neutral. Do not add profanity, explanations, Markdown,
 - Never infer state from another task or conversation.
 - Explicit `off` suppresses `rewriting-explicitly` and every style layer until a later `on` in the same task.
 - Explicit `on` permits the orchestrator on later Russian responses; it does not rewrite the command acknowledgement itself.
-- Direct invocation of `rewriting-explicitly` turns the mode on for the current task unless `off` was issued later.
+- The first direct invocation of `rewriting-explicitly` may turn the mode on only when the task has no explicit state. It never overrides an explicit `off`; only a later `on` does that.
 - A status query in a fresh task returns exactly `explicit mode: off`.
 
 Do not claim or implement custom slash-command support. `$explicit-mode` is the canonical skill invocation.

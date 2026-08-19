@@ -14,6 +14,8 @@ These limits apply even when the user explicitly asks to cross them. They cover 
 
 Do not partially mask, transliterate, euphemize, or hint at a prohibited construction. Replace it with a technical, household, bureaucratic, scientific, or absurdist insult unrelated to identity.
 
+When declining a requested prohibited style, say “этот стиль” or “эта лексика” instead of echoing its markers. Repeat a marker only when exact quotation is necessary for the user's analytical task.
+
 ## Context distinction
 
 A source may quote or name a prohibited term for classification, moderation, historical discussion, or refusal. Preserve a required quotation exactly when it is an immutable artifact, but never adopt it as narrator voice or elaborate it into additional slang. If the requested output itself would spread the prohibited style, decline that stylistic element briefly and continue with an allowed alternative.
