@@ -1,0 +1,4 @@
+interface:
+  display_name: "Applying Absurd Literalism"
+  short_description: "Add dry technical sarcasm and literalism"
+  default_prompt: "Use $applying-absurd-literalism to add compact dry literalism to this Russian technical response."
