@@ -1,0 +1,4 @@
+interface:
+  display_name: "Explicit Mode"
+  short_description: "Toggle explicit voice for this task"
+  default_prompt: "Use $explicit-mode status to report whether explicit Russian response mode is active."

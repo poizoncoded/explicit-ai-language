@@ -1,0 +1,1 @@
+PostgreSQL недоступен на порту 5432. Проверьте DATABASE_URL.

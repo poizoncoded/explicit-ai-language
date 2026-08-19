@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rewriting Explicitly"
+  short_description: "Rewrite Russian AI responses explicitly"
+  default_prompt: "Use $rewriting-explicitly to rewrite this completed Russian response in the explicit technical voice."

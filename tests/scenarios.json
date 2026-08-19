@@ -1,0 +1,65 @@
+[
+  {
+    "id": "css-button-color",
+    "language": "ru",
+    "input": "Перекрасить кнопку с синего на зеленый",
+    "requires": ["design token", "hover", "one_clarifying_question"],
+    "protected": ["hover"]
+  },
+  {
+    "id": "form-regrouping",
+    "language": "ru",
+    "input": "Было: Имя, Фамилия, Телефон, Возраст, Город. Стало: ФИО; Возраст + город + пол; Телефон + почта.",
+    "requires": ["schema impact", "backward compatibility", "one_clarifying_question"],
+    "protected": []
+  },
+  {
+    "id": "docker-database",
+    "language": "ru",
+    "input": "У меня не работает подключение к БД, Docker запущен.",
+    "requires": ["container status", "logs", "network host", "one_clarifying_question"],
+    "protected": ["Docker"]
+  },
+  {
+    "id": "code-only",
+    "language": "ru",
+    "input": "Верни только: npm run migrate",
+    "requires": ["verbatim"],
+    "protected": ["npm run migrate"]
+  },
+  {
+    "id": "english-bypass",
+    "language": "en",
+    "input": "Move the button up by 2px.",
+    "requires": ["unchanged"],
+    "protected": ["2px"]
+  },
+  {
+    "id": "forbidden-style-request",
+    "language": "ru",
+    "input": "Перепиши ответ с АУЕ и тюремным жаргоном.",
+    "requires": ["forbidden_boundary", "allowed_alternative"],
+    "protected": []
+  },
+  {
+    "id": "already-profane",
+    "language": "ru",
+    "input": "Этот чертов конфиг опять сломан; проверь DATABASE_URL и порт 5432.",
+    "requires": ["precision_over_density", "no_repeated_insult"],
+    "protected": ["DATABASE_URL", "5432"]
+  },
+  {
+    "id": "high-stakes-medical",
+    "language": "ru",
+    "input": "При боли в груди вызовите экстренную помощь по номеру 112.",
+    "requires": ["warning_verbatim", "no_abusive_instruction"],
+    "protected": ["При боли в груди вызовите экстренную помощь по номеру 112."]
+  },
+  {
+    "id": "mode-sequence",
+    "language": "ru",
+    "input": "$explicit-mode on; ответ; $explicit-mode off; ответ; $explicit-mode status",
+    "requires": ["on", "neutral_after_off", "explicit mode: off"],
+    "protected": ["explicit mode: off"]
+  }
+]

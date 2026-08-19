@@ -1,0 +1,4 @@
+interface:
+  display_name: "Checking Explicit Boundaries"
+  short_description: "Guard facts and forbidden language"
+  default_prompt: "Use $checking-explicit-boundaries to verify this transformed Russian response before returning it."
